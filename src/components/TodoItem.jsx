@@ -2,9 +2,21 @@ import React, { Component } from "react";
 import "../css/TodoItem.css";
 
 class TodoItem extends Component {
+  constructor() {
+    super();
+  }
+
   render() {
     return (
-      <div className="todo-item">
+      <div
+        className="todo-item"
+        style={{
+          transform: this.props.item.completed
+            ? "translateX(1em)"
+            : "translateX(0)",
+          backgroundColor: this.props.item.completed ? "aliceblue" : "#ccc"
+        }}
+      >
         <input
           type="checkbox"
           checked={this.props.item.completed}
