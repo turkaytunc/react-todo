@@ -1,0 +1,12 @@
+.todo-item {
+    background-color: #ddd;
+    margin: 1em;
+    padding: 2em;
+    border-radius: 10px;
+    border: 2px solid rgb(252, 191, 156);
+}
+
+.todo-item-paragraph {
+    display: inline;
+    margin-left: .5em;
+}
