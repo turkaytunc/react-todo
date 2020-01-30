@@ -7,6 +7,17 @@
   grid-column: 2;
 }
 
+@media only screen and (max-width: 700px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .todo-list {
+    grid-column: 1;
+  }
+}
+
+
 
 @keyframes App-logo-spin {
   from {
