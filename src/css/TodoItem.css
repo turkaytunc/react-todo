@@ -1,12 +1,16 @@
 .todo-item {
+    display: grid;
+    grid-template-columns: 1fr 14fr;
     background-color: #ddd;
     margin: 1em;
     padding: 2em;
     border-radius: 10px;
     border: 2px solid rgb(252, 191, 156);
+    justify-content: center;
+    align-items: center;
 }
 
 .todo-item-paragraph {
-    display: inline;
-    margin-left: .5em;
+    margin-left: 1em;
+    font-size: .8em;
 }
