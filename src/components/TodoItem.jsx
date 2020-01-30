@@ -8,9 +8,16 @@ class TodoItem extends Component {
         <input
           type="checkbox"
           checked={this.props.item.completed}
-          onChange={() => console.log("changed")}
+          onChange={event => this.props.handleChange(this.props.item.id)}
         />
-        <p className="todo-item-paragraph">{this.props.item.title}</p>
+        <p
+          className="todo-item-paragraph"
+          style={{
+            textDecoration: this.props.item.completed ? "line-through" : "none"
+          }}
+        >
+          {this.props.item.title}
+        </p>
       </div>
     );
   }
