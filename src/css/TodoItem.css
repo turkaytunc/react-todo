@@ -1,7 +1,6 @@
 .todo-item {
     display: grid;
     grid-template-columns: 1fr 14fr;
-    background-color: #ddd;
     margin: 1em;
     padding: 2em;
     border-radius: 10px;

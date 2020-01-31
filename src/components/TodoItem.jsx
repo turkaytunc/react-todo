@@ -12,9 +12,11 @@ class TodoItem extends Component {
         className="todo-item"
         style={{
           transform: this.props.item.completed
-            ? "translateX(1em)"
+            ? "translateX(1.5em)"
             : "translateX(0)",
-          backgroundColor: this.props.item.completed ? "aliceblue" : "#ccc"
+          backgroundColor: this.props.item.completed
+            ? "rgb(236, 231, 201)"
+            : "rgb(164, 216, 236)"
         }}
       >
         <input
